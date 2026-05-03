@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courtney Salton | Fine Art</title>
+<meta name="description" content="Courtney Salton Fine Art — vibrant, nature focused paintings by a Charlotte-based artist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { serif: ['Playfair Display','serif'], sans: ['DM Sans','sans-serif'] },
+      colors: {
+        mustard: '#DDAF3B',
+        leaf: '#6B8E5A',
+        sand: '#F6F3EA',
+        bark: '#3D3A35'
+      }
+    }
+  }
+}
+</script>
+<style>
+.hero-bg { background-image: url('bg.svg'), linear-gradient(135deg, #F6F3EA 0%, #E9E6DB 100%); background-size: 300px, cover; }
+.flower-spin { animation: spin 60s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+</style>
+</head>
+<body class="font-sans text-bark bg-sand">
+
+<!-- Hero -->
+<section class="hero-bg min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center relative overflow-hidden">
+  <div class="absolute top-10 left-10 opacity-20 flower-spin">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none"><path d="M60 10 C60 10 80 40 110 60 C80 80 60 110 60 110 C60 110 40 80 10 60 C40 40 60 10 60 10Z" fill="#DDAF3B"/></svg>
+  </div>
+  <div class="max-w-2xl z-10">
+    <p class="uppercase tracking-widest text-leaf text-sm mb-4 font-medium">Fine Art · Charlotte, NC</p>
+    <h1 class="font-serif text-6xl md:text-8xl font-bold text-bark mb-6 leading-tight">Courtney<br>Salton</h1>
+    <p class="text-xl md:text-2xl text-bark/80 font-light italic mb-10">Artist facilitating inspired walls with her vibrant, nature focused paintings.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#works" class="px-8 py-3 bg-mustard text-white rounded-full font-medium hover:bg-[#c49a2e] transition">View Work</a>
+      <a href="mailto:courtneysalton@gmail.com" class="px-8 py-3 border-2 border-leaf text-leaf rounded-full font-medium hover:bg-leaf hover:text-white transition">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-24 px-6 bg-white">
+  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="text-leaf uppercase tracking-widest text-sm font-semibold mb-3">The Artist</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-bark mb-8 leading-tight">Inspired by Nature.<br>Painting with Joy.</h2>
+      <p class="text-bark/70 text-lg leading-relaxed mb-6">Courtney Salton is a Charlotte-based painter creating vibrant, nature focused works that bring life and color to any space. Her art celebrates the beauty of botanical subjects and landscapes, rendered with an energetic, joyful palette.</p>
+      <p class="text-bark/70 text-lg leading-relaxed">Whether a large floral commission or a small landscape study, each piece is created with the intention of facilitating inspired walls — artwork that uplifts, energizes, and connects viewers to the natural world.</p>
+    </div>
+    <div class="relative">
+      <div class="aspect-[4/5] rounded-3xl bg-gradient-to-br from-mustard/20 to-leaf/20 flex items-center justify-center overflow-hidden shadow-xl">
+        <div class="text-center p-8">
+          <div class="text-8xl mb-4">🌻</div>
+          <p class="text-bark/50 font-serif italic">Artist portrait placeholder.<br>Replace with your photo.</p>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-mustard rounded-full opacity-20 blur-2xl"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Works -->
+<section id="works" class="py-24 px-6 bg-sand">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-leaf uppercase tracking-widest text-sm font-semibold mb-3 text-center">Selected Works</p>
+    <h2 class="font-serif text-4xl md:text-5xl font-bold text-bark mb-16 text-center">Recent Paintings</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500">
+        <div class="aspect-square bg-gradient-to-br from-yellow-100 to-amber-100 flex items-center justify-center relative overflow-hidden">
+          <span class="text-7xl group-hover:scale-110 transition duration-500">🌼</span>
+          <div class="absolute inset-0 bg-mustard/10 opacity-0 group-hover:opacity-100 transition"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold text-bark mb-1">Golden Botanical I</h3>
+          <p class="text-sm text-leaf font-medium mb-3">Acrylic on Canvas · 2024</p>
+          <p class="text-bark/60">Vibrant yellow florals bursting with life and sunshine.</p>
+        </div>
+      </div>
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500">
+        <div class="aspect-square bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center relative overflow-hidden">
+          <span class="text-7xl group-hover:scale-110 transition duration-500">🌿</span>
+          <div class="absolute inset-0 bg-leaf/10 opacity-0 group-hover:opacity-100 transition"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold text-bark mb-1">Garden in Bloom</h3>
+          <p class="text-sm text-leaf font-medium mb-3">Acrylic on Canvas · 2024</p>
+          <p class="text-bark/60">A cheerful garden scene full of color, energy, and growth.</p>
+        </div>
+      </div>
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500">
+        <div class="aspect-square bg-gradient-to-br from-lime-100 to-teal-100 flex items-center justify-center relative overflow-hidden">
+          <span class="text-7xl group-hover:scale-110 transition duration-500">🍃</span>
+          <div class="absolute inset-0 bg-leaf/10 opacity-0 group-hover:opacity-100 transition"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-2xl font-bold text-bark mb-1">Nature Walk</h3>
+          <p class="text-sm text-leaf font-medium mb-3">Mixed Media · 2023</p>
+          <p class="text-bark/60">Organic textures inspired by the Carolina landscape.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-24 px-6 bg-bark text-sand text-center">
+  <div class="max-w-2xl mx-auto">
+    <p class="text-mustard uppercase tracking-widest text-sm font-semibold mb-3">Get in Touch</p>
+    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Bring Color to Your Walls</h2>
+    <p class="text-sand/70 text-lg mb-10">Commission a piece or inquire about available works and upcoming shows.</p>
+    <a href="mailto:courtneysalton@gmail.com" class="inline-block px-10 py-4 bg-mustard text-white rounded-full font-semibold text-lg hover:bg-[#c49a2e] transition">Email Courtney</a>
+    <div class="mt-10 flex justify-center gap-6">
+      <a href="https://www.instagram.com/courtneysaltonfineart" target="_blank" class="text-sand/50 hover:text-mustard transition">Instagram</a>
+      <a href="https://www.facebook.com/courtneysaltonart" target="_blank" class="text-sand/50 hover:text-mustard transition">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-bark/40 text-sm bg-sand">
+  © 2024 Courtney Salton Fine Art · Charlotte, NC
+</footer>
+
+</body>
+</html>
